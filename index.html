@@ -67,12 +67,17 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
       gap: 25px;
+      align-items: stretch;
     }
 
     .card {
       border: 4px solid #fff;
       padding: 20px;
       background: #000;
+
+      display: flex;
+      flex-direction: column;
+      min-height: 430px;
     }
 
     .file-number {
@@ -83,6 +88,7 @@
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 12px;
+      width: fit-content;
     }
 
     .tag {
@@ -93,6 +99,7 @@
       font-size: 0.8rem;
       font-weight: bold;
       text-transform: uppercase;
+      width: fit-content;
     }
 
     .card h2 {
@@ -102,6 +109,10 @@
       line-height: 1;
       text-transform: uppercase;
       letter-spacing: -1px;
+
+      min-height: 4rem;
+      max-height: 4rem;
+      overflow: hidden;
     }
 
     .names {
@@ -110,6 +121,11 @@
       padding: 6px 10px;
       margin-bottom: 15px;
       font-weight: bold;
+      width: fit-content;
+    }
+
+    .video-container {
+      margin-top: auto;
     }
 
     video {
@@ -151,7 +167,6 @@
 
   <main>
 
-
     <section class="grid">
 
       <!-- CASE FILE 001 -->
@@ -167,11 +182,13 @@
           Danikah • Katelyn • Crow
         </div>
 
-        <video controls>
-          <source src="crodankat.mp4" type="video/mp4">
-          <source src="https://raw.githubusercontent.com/Buhlerbuhler/casefiles/main/crodankat.mp4" type="video/mp4">
-          Your browser does not support the video element.
-        </video>
+        <div class="video-container">
+          <video controls>
+            <source src="crodankat.mp4" type="video/mp4">
+            <source src="https://raw.githubusercontent.com/Buhlerbuhler/casefiles/main/crodankat.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+        </div>
 
       </div>
 
@@ -182,16 +199,18 @@
 
         <div class="tag">Cold Case</div>
 
-        <h2>Pamela <br> Harvey</h2>
+        <h2>Pamela Harvey</h2>
 
         <div class="names">
           Lena • Jordyn
         </div>
 
-        <video controls>
-          <source src="https://raw.githubusercontent.com/Buhlerbuhler/casefiles/main/jorlen1.mp4" type="video/mp4">
-          Your browser does not support the video element.
-        </video>
+        <div class="video-container">
+          <video controls>
+            <source src="https://raw.githubusercontent.com/Buhlerbuhler/casefiles/main/jorlen1.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+        </div>
 
       </div>
 
@@ -202,16 +221,18 @@
 
         <div class="tag">Heist</div>
 
-        <h2>The Hertz <br> Heist</h2>
+        <h2>The Hertz Heist</h2>
 
         <div class="names">
          Joshua
         </div>
 
-        <video controls>
-          <source src="https://github.com/Buhlerbuhler/casefiles/raw/main/Josh%20Pod%20(1).mp4" type="video/mp4">
-          Your browser does not support the video element.
-        </video>
+        <div class="video-container">
+          <video controls>
+            <source src="https://github.com/Buhlerbuhler/casefiles/raw/main/Josh%20Pod%20(1).mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+        </div>
 
       </div>
 
@@ -228,10 +249,12 @@
           Eunice • Zlata • Eileen
         </div>
 
-        <video controls>
-          <source src="https://github.com/Buhlerbuhler/casefiles/raw/main/ZlaEilEun.mp4" type="video/mp4">
-          Your browser does not support the video element.
-        </video>
+        <div class="video-container">
+          <video controls>
+            <source src="https://github.com/Buhlerbuhler/casefiles/raw/main/ZlaEilEun.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+        </div>
 
       </div>
 
